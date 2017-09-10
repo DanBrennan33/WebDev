@@ -1,0 +1,176 @@
+/* Color palette
+  #393D3F - black
+  #FDFDFF - white
+  #C6C5B9 - gray
+  #62929E - teal
+  #546A7B - blue
+-------------------------------------*/
+
+/* Global Styles
+-------------------------------------*/
+/* apply a natural box layout to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  /* add font to body */
+  margin: 0;
+}
+a {
+  color: #C6C5B9;
+}
+a:hover {
+  text-decoration: none;
+}
+h1, h1 {
+  /* font to headers */
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.content-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+}
+.col-narrow {
+  width: 30%;
+  float: left;
+}
+.col-wide {
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+}
+.btn {
+  text-decoration: none;
+  background: #EF233C;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+.btn:hover {
+  background: #393D3F;
+
+}
+/* Header and Footer
+-------------------------------------*/
+header, footer {
+  background: #393D3F;
+  color: #FDFDFF;
+}
+/* header */
+header {
+  position: relative;
+}
+header h1, header h2 {
+  color: #62929E;
+  margin: 0;
+}
+.profile-img {
+  border-radius: 50%;
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+footer a, nav a {
+  text-decoration: none;
+}
+.contact-info a {
+  background: #FDFDFF;
+  padding: 10px;
+  color: #393D3F;
+  text-decoration: none;
+  border: 1px solid #FDFDFF;
+  display: inline-block;
+}
+footer a:hover, nav a:hover {
+  background: #393D3F;
+  color: #FDFDFF;
+}
+
+/* Navigation
+-------------------------------------*/
+nav {
+  text-align: center;
+  background: #393D3F;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Work Experience
+-------------------------------------*/
+.work {
+  background: #62929E;
+  color: #FDFDFF;
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-desc {
+  margin-bottom: 25px;
+}
+.job-desc ul:first-of-type {
+  margin-top: 0;
+}
+
+/* Education
+-------------------------------------*/
+.education {
+  background: #546A7B;
+  color: #FDFDFF;
+}
+p + h3 {
+  margin-top: 30px;
+}
+
+/* Media Queries
+-------------------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 899px) {
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 140px;
+  }
+}
